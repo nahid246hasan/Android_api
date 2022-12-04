@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/ic_launcher_foreground"
+
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/teal_700"
+        android:text="Student Management System"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        >
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:padding="20dp"
+            />
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="20sp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/ET_password1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="New Password"
+        android:textColorHint="@color/black"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="20sp"
+        android:inputType="textPassword"
+
+        />
+
+
+    <EditText
+        android:id="@+id/ET_C_password1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Confirm New Password"
+        android:textColorHint="@color/black"
+        android:paddingStart="20dp"
+        android:layout_marginBottom="20sp"
+        android:inputType="textPassword"
+
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="10dp"
+            >
+            <Button
+                android:id="@+id/btn_Create_New_Account"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cna"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Log In"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an account"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+
